@@ -1,0 +1,143 @@
+{
+  "currentUser": null,
+  "vehicles": [
+    {
+      "id": "v1",
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "vin": "1234567890ABCDEF",
+      "licensePlate": "EV-1234",
+      "fuelType": "Electric",
+      "image": "https://images.unsplash.com/photo-1617704541003-8758872007a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": {
+        "fuelLevel": 85,
+        "batteryHealth": 98,
+        "tirePressure": { "FL": 34, "FR": 35, "RL": 34, "RR": 36 },
+        "engineHealth": "OK",
+        "odometer": 25000
+      },
+      "metrics": {
+        "fuelEfficiency": "4.5 mi/kWh",
+        "avgSpeed": "45 mph",
+        "distanceTraveled": "25000 miles"
+      }
+    },
+    {
+      "id": "v2",
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2018,
+      "vin": "ABCDEF1234567890",
+      "licensePlate": "XYZ-5678",
+      "fuelType": "Gasoline",
+      "image": "https://images.unsplash.com/photo-1593693402631-cd02772d174d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "status": {
+        "fuelLevel": 60,
+        "batteryHealth": 90,
+        "tirePressure": { "FL": 32, "FR": 33, "RL": 31, "RR": 32 },
+        "engineHealth": "Warning",
+        "odometer": 75000
+      },
+      "metrics": {
+        "fuelEfficiency": "32 MPG",
+        "avgSpeed": "35 mph",
+        "distanceTraveled": "75000 miles"
+      }
+    }
+  ],
+  "trips": [
+    {
+      "id": "t1",
+      "vehicleId": "v1",
+      "date": "2023-10-26",
+      "startLocation": "Home",
+      "endLocation": "Work",
+      "distance": 25.3,
+      "duration": "0h 30m",
+      "fuelUsed": null,
+      "notes": "Morning commute"
+    },
+    {
+      "id": "t2",
+      "vehicleId": "v2",
+      "date": "2023-10-25",
+      "startLocation": "Office",
+      "endLocation": "Grocery Store",
+      "distance": 8.1,
+      "duration": "0h 15m",
+      "fuelUsed": 0.25,
+      "notes": "Quick errand"
+    }
+  ],
+  "fuelLogs": [
+    {
+      "id": "f1",
+      "vehicleId": "v1",
+      "date": "2023-10-20",
+      "fuelType": "Electric",
+      "quantity": 30,
+      "cost": 12.50,
+      "odometer": 24800,
+      "stationName": "Home Charger",
+      "receipt": null
+    },
+    {
+      "id": "f2",
+      "vehicleId": "v2",
+      "date": "2023-10-18",
+      "fuelType": "Gasoline",
+      "quantity": 10.5,
+      "cost": 45.75,
+      "odometer": 74500,
+      "stationName": "Shell",
+      "receipt": null
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "m1",
+      "vehicleId": "v1",
+      "type": "Tire Rotation",
+      "dueDate": "2024-01-15",
+      "status": "Upcoming",
+      "cost": null,
+      "notes": "Recommended every 10,000 miles"
+    },
+    {
+      "id": "m2",
+      "vehicleId": "v2",
+      "type": "Oil Change",
+      "dueDate": "2023-11-01",
+      "status": "Due Soon",
+      "cost": null,
+      "notes": "Last changed at 70,000 miles"
+    },
+    {
+      "id": "m3",
+      "vehicleId": "v1",
+      "type": "Software Update",
+      "dueDate": "2023-09-01",
+      "status": "Completed",
+      "cost": 0,
+      "notes": "Version 11.0"
+    },
+    {
+      "id": "m4",
+      "vehicleId": "v2",
+      "type": "Brake Pad Replacement",
+      "dueDate": "2023-08-10",
+      "status": "Completed",
+      "cost": 350,
+      "notes": "Front pads replaced"
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "email": "user@example.com",
+      "password": "password123",
+      "name": "John Doe"
+    }
+  ]
+}
